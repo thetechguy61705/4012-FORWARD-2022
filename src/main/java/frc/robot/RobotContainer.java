@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
+import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.commands.TankDrive;
 import frc.robot.subsystems.DriveTrain;
@@ -43,6 +44,8 @@ public class RobotContainer {
    */
   private void configureButtonBindings() {
 
+    JoystickButton shootBalls = new JoystickButton(stickR, 0);
+    JoystickButton putBallsIn = new JoystickButton(stickR, 3);
   }
   private void configDefaultCommands() {
    driveTrain.setDefaultCommand(new TankDrive(driveTrain,

@@ -25,4 +25,14 @@ public final class Constants {
     public static int LEFT_BACK_MOTOR = 2;
     public static int RIGHT_BACK_MOTOR = 4;
 
+
+    // Shooter
+    public static int TOP_SHOOTER_MOTOR = 5;
+    public static int BOTTOM_SHOOTER_MOTOR = 6;
+
+    // Intake
+    /**
+     * The assigned motor is a 775 pro motor, with a Talon SRX Motor Controller
+     */
+    public static int INTAKE_MOTOR_PORT = 7;
   }
